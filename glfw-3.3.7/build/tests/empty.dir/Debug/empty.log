@@ -1,0 +1,6 @@
+﻿  Building Custom Rule D:/Programming/CG/opengl-starter/glfw-3.3.7/tests/CMakeLists.txt
+  empty.c
+  tinycthread.c
+  glad_gl.c
+  Generating Code...
+  empty.vcxproj -> D:\Programming\CG\opengl-starter\glfw-3.3.7\build\tests\Debug\empty.exe

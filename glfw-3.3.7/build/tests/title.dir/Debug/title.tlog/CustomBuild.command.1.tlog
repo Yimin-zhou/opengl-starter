@@ -1,0 +1,10 @@
+^D:\PROGRAMMING\CG\OPENGL-STARTER\GLFW-3.3.7\TESTS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/CG/opengl-starter/glfw-3.3.7 -BD:/Programming/CG/opengl-starter/glfw-3.3.7/build --check-stamp-file D:/Programming/CG/opengl-starter/glfw-3.3.7/build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

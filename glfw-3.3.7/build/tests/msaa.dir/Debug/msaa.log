@@ -1,0 +1,6 @@
+﻿  Building Custom Rule D:/Programming/CG/opengl-starter/glfw-3.3.7/tests/CMakeLists.txt
+  msaa.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  msaa.vcxproj -> D:\Programming\CG\opengl-starter\glfw-3.3.7\build\tests\Debug\msaa.exe

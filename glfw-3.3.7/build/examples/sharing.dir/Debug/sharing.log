@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/Programming/CG/opengl-starter/glfw-3.3.7/examples/CMakeLists.txt
+  sharing.c
+  glad_gl.c
+  Generating Code...
+  sharing.vcxproj -> D:\Programming\CG\opengl-starter\glfw-3.3.7\build\examples\Debug\sharing.exe

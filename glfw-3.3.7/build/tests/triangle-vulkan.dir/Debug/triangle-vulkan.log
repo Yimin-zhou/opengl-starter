@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/Programming/CG/opengl-starter/glfw-3.3.7/tests/CMakeLists.txt
+  triangle-vulkan.c
+  glad_vulkan.c
+  Generating Code...
+  triangle-vulkan.vcxproj -> D:\Programming\CG\opengl-starter\glfw-3.3.7\build\tests\Debug\triangle-vulkan.exe
