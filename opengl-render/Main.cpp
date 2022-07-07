@@ -1,4 +1,4 @@
-#include <glad/glad.h>
+﻿#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 
@@ -44,6 +44,8 @@ int main()
 	// resize render resolution
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
+	// build and compile our shader program
+	// ------------------------------------
 	// create & link shaders
 	// vertex shader
 	const char* vertexShaderSource = "#version 330 core\n"
@@ -102,30 +104,64 @@ int main()
 		std::cout << "ERROR::SHADER::LINKING_FAILED\n" << infoLog << std::endl;
 	}
 
-	// vertex
-	float vertices[] = {
-		-0.5f, -0.5f, 0.0f,
-		 0.5f, -0.5f, 0.0f,
-		 0.0f,  0.5f, 0.0f
+	// set up vertex data (and buffer(s)) and configure vertex attributes
+	// ------------------------------------------------------------------
+	// vertex(NDC SPACE)
+	// index drawing
+	//float vertices[] = {
+	//	0.5f, 0.5f, 0.0f,   // right upper
+	//	0.5f, -0.5f, 0.0f,  // right lower
+	//	-0.5f, -0.5f, 0.0f, // left lower
+	//	-0.5f, 0.5f, 0.0f   // left upper
+	//};
+	//unsigned int indices[] = {
+	//	// 注意索引从0开始! 
+	//	// 此例的索引(0,1,2,3)就是顶点数组vertices的下标，
+	//	// 这样可以由下标代表顶点组合成矩形
+	//	0, 1, 3, // 第一个三角形
+	//	1, 2, 3  // 第二个三角形
+	//};
+	float verticesOne[] = {
+	-0.5f, 0.0f, 0.0f,
+	-0.25f, 0.5f, 0.0f,
+	0.0f, 0.0f, 0.0f,
+	};
+	float verticesTwo[] = {
+	0.5f, 0.0f, 0.0f,   
+	0.25f, 0.5f, 0.0f,
+	0.0f, 0.0f, 0.0f,
 	};
 	// Vertex Array Object
 	// use VAO to link attributs in VBO
-	unsigned int VAO;
-	glGenVertexArrays(1, &VAO);
+	unsigned int VAOs[2];
+	glGenVertexArrays(2, VAOs);
 	// bind VAO first
-	glBindVertexArray(VAO);
+	glBindVertexArray(VAOs[0]);
 	// vertex buffer object
 	// Create VBO vertex buffer object, store vertex info in GPU memory, fast access
-	unsigned int VBO;
-	glGenBuffers(1, &VBO);
+	unsigned int VBOs[2];
+	glGenBuffers(2, VBOs);
 	// GL_ARRAY_BUFFER is a type of buffer object
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBOs[0]);
 	// Copy vertices to GL_ARRAY_BUFFER
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(verticesOne), verticesOne, GL_STATIC_DRAW);
 
-	// link vertex attributes
+	// element buffer object
+	//unsigned int EBO;
+	//glGenBuffers(1, &EBO);
+	//// bind indices to EBO
+	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+	// link vertex attributes (VAO POINT TO VBO)
 	// get data from GL_ARRAY_BUFFER's VBO
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	glBindVertexArray(VAOs[1]);	// note that we bind to a different VAO now
+	glBindBuffer(GL_ARRAY_BUFFER, VBOs[1]);	// and a different VBO
+	glBufferData(GL_ARRAY_BUFFER, sizeof(verticesTwo), verticesTwo, GL_STATIC_DRAW);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0); // because the vertex data is tightly packed we can also specify 0 as the vertex attribute's stride to let OpenGL figure it out
 	glEnableVertexAttribArray(0);
 
 	// Unbind VBO with GL_ARRAY_BUFFER
@@ -144,17 +180,23 @@ int main()
 
 		//use shader
 		glUseProgram(shaderProgram);
-		// every shader call will call the shader program
-		glBindVertexArray(VAO);
+		// bind every frame
+		glBindVertexArray(VAOs[0]);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
+		// then we draw the second triangle using the data from the second VAO
+		glBindVertexArray(VAOs[1]);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+
+		//index drawing
+		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
 
-	glDeleteVertexArrays(1, &VAO);
-	glDeleteBuffers(1, &VBO);
+	glDeleteVertexArrays(2, VAOs);
+	glDeleteBuffers(2, VBOs);
 	glDeleteProgram(shaderProgram);
 	glfwTerminate();
 	return 0;
