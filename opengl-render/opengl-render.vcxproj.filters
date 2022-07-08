@@ -13,13 +13,110 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\1.intro">
+      <UniqueIdentifier>{6ee683a6-2d13-44a5-a63a-b3688537d265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\1.Hello">
+      <UniqueIdentifier>{6d28565f-0897-4107-bda9-33c3bf3a7874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\1.Hello\1.1.hello_window">
+      <UniqueIdentifier>{7bd26ecd-4b11-4b36-bd78-00c9d11996b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\3.Shader">
+      <UniqueIdentifier>{690a31d5-35a4-4e9f-b1bf-26b8b399518a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\3.Shader\3.3.Shader_class">
+      <UniqueIdentifier>{70aa2855-af6e-4d7c-b993-5b50acd11a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\3.Shader\3.4.Shader_exercise">
+      <UniqueIdentifier>{0edb3a67-6cbd-4b78-bd7a-962128ff9656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\1.Hello\1.2.hello_window_clear">
+      <UniqueIdentifier>{fe264ce2-3db7-433f-92cb-ce64e384e05c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\3.Shader\3.1.shaders_uniform">
+      <UniqueIdentifier>{664be704-00ff-4e61-ba7c-dfbb14435390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\3.Shader\3.2.shaders_interpolation">
+      <UniqueIdentifier>{8807fa2d-db13-4e8b-9443-d85c3ea41a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\2.Triangle">
+      <UniqueIdentifier>{44a2c2a6-fa4a-4552-995a-35ba1c95f403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\2.Triangle\2.1.hello_triangle">
+      <UniqueIdentifier>{46a6f51a-5a5f-4d54-af08-5b0ea93e0def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\2.Triangle\2.2.hello_triangle_indexed">
+      <UniqueIdentifier>{5edc757d-d08e-40d0-aa32-ee61ef6a4c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\2.Triangle\2.3.exercise">
+      <UniqueIdentifier>{c97b7150-4cd9-4375-8a40-92d2b57e7a9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\4.Texture">
+      <UniqueIdentifier>{ae13e6fc-addb-4afd-8b83-e4e57fae96a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1.intro\4.Texture\4.1.textrue">
+      <UniqueIdentifier>{dec2cd93-c7a4-46c5-8c9e-0d2a6a1b037d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shader_class.cpp">
+      <Filter>Source Files\1.intro\3.Shader\3.3.Shader_class</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_excercise.cpp">
+      <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\1.1.hello_window\hello_window.cpp">
+      <Filter>Source Files\1.intro\1.Hello\1.1.hello_window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\1.2.hello_window_clear\hello_window_clear.cpp">
+      <Filter>Source Files\1.intro\1.Hello\1.2.hello_window_clear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.1.hello_triangle\hello_triangle.cpp">
+      <Filter>Source Files\1.intro\2.Triangle\2.1.hello_triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.2.hello_triangle_indexed\hello_triangle_indexed.cpp">
+      <Filter>Source Files\1.intro\2.Triangle\2.2.hello_triangle_indexed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.3.hello_triangle_exercise1\hello_triangle_exercise1.cpp">
+      <Filter>Source Files\1.intro\2.Triangle\2.3.exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.4.hello_triangle_exercise2\hello_triangle_exercise2.cpp">
+      <Filter>Source Files\1.intro\2.Triangle\2.3.exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.5.hello_triangle_exercise3\hello_triangle_exercise3.cpp">
+      <Filter>Source Files\1.intro\2.Triangle\2.3.exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.1.shaders_uniform\shaders_uniform.cpp">
+      <Filter>Source Files\1.intro\3.Shader\3.1.shaders_uniform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.2.shaders_interpolation\shaders_interpolation.cpp">
+      <Filter>Source Files\1.intro\3.Shader\3.2.shaders_interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="texturecpp.cpp">
+      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3.3fragment.fs">
+      <Filter>Source Files\1.intro\3.Shader\3.3.Shader_class</Filter>
+    </None>
+    <None Include="3.3vertex.vs">
+      <Filter>Source Files\1.intro\3.Shader\3.3.Shader_class</Filter>
+    </None>
+    <None Include="3.4.fragment.fs">
+      <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
+    </None>
+    <None Include="3.4.vertex.vs">
+      <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
+    </None>
   </ItemGroup>
 </Project>
