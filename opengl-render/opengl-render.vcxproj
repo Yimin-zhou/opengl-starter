@@ -166,16 +166,23 @@
     <ClCompile Include="shader_excercise.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="texturecpp.cpp" />
+    <ClCompile Include="texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="3.3fragment.fs" />
     <None Include="3.3vertex.vs" />
     <None Include="3.4.fragment.fs" />
     <None Include="3.4.vertex.vs" />
+    <None Include="4.1.fragment.glsl" />
+    <None Include="4.1.vertex.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\awesomeface.png" />
+    <Image Include="resources\container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

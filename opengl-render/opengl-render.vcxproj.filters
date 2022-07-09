@@ -96,12 +96,15 @@
     <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.2.shaders_interpolation\shaders_interpolation.cpp">
       <Filter>Source Files\1.intro\3.Shader\3.2.shaders_interpolation</Filter>
     </ClCompile>
-    <ClCompile Include="texturecpp.cpp">
+    <ClCompile Include="texture.cpp">
       <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -118,5 +121,19 @@
     <None Include="3.4.vertex.vs">
       <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
     </None>
+    <None Include="4.1.vertex.glsl">
+      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
+    </None>
+    <None Include="4.1.fragment.glsl">
+      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\container.jpg">
+      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
+    </Image>
+    <Image Include="resources\awesomeface.png">
+      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
+    </Image>
   </ItemGroup>
 </Project>
