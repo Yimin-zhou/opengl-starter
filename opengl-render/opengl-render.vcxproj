@@ -159,6 +159,7 @@
     <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.2.shaders_interpolation\shaders_interpolation.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="5.1.Matrix.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="shader_class.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -166,7 +167,9 @@
     <ClCompile Include="shader_excercise.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="texture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h" />
@@ -179,6 +182,8 @@
     <None Include="3.4.vertex.vs" />
     <None Include="4.1.fragment.glsl" />
     <None Include="4.1.vertex.glsl" />
+    <None Include="5.1.fragment.glsl" />
+    <None Include="5.1.vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\awesomeface.png" />

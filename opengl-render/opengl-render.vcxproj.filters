@@ -58,6 +58,9 @@
     <Filter Include="Source Files\1.intro\4.Texture\4.1.textrue">
       <UniqueIdentifier>{dec2cd93-c7a4-46c5-8c9e-0d2a6a1b037d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\1.intro\5.Matrix">
+      <UniqueIdentifier>{b20e2391-e1a0-4152-b941-71b6c0201f07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -99,6 +102,9 @@
     <ClCompile Include="texture.cpp">
       <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
     </ClCompile>
+    <ClCompile Include="5.1.Matrix.cpp">
+      <Filter>Source Files\1.intro\5.Matrix</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -126,6 +132,12 @@
     </None>
     <None Include="4.1.fragment.glsl">
       <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
+    </None>
+    <None Include="5.1.vertex.glsl">
+      <Filter>Source Files\1.intro\5.Matrix</Filter>
+    </None>
+    <None Include="5.1.fragment.glsl">
+      <Filter>Source Files\1.intro\5.Matrix</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
