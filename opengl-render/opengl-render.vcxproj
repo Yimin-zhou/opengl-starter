@@ -159,7 +159,10 @@
     <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.2.shaders_interpolation\shaders_interpolation.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="5.1.Matrix.cpp" />
+    <ClCompile Include="5.1.Matrix.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="6.Coordinate.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="shader_class.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -184,6 +187,8 @@
     <None Include="4.1.vertex.glsl" />
     <None Include="5.1.fragment.glsl" />
     <None Include="5.1.vertex.glsl" />
+    <None Include="6.1.fragment.glsl" />
+    <None Include="6.1.vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\awesomeface.png" />
