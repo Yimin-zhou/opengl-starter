@@ -64,6 +64,12 @@
     <Filter Include="Source Files\1.intro\6.Coordinates">
       <UniqueIdentifier>{964a14c7-8b66-452b-b05e-8abcb2de3584}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\1.intro\7.Camera">
+      <UniqueIdentifier>{2df1c6aa-207b-4044-a722-0a9a8e54e10a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2.light">
+      <UniqueIdentifier>{5c2ccc79-b70c-4988-b87d-dc0a1f519550}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -111,12 +117,18 @@
     <ClCompile Include="6.Coordinate.cpp">
       <Filter>Source Files\1.intro\6.Coordinates</Filter>
     </ClCompile>
+    <ClCompile Include="7.camera.cpp">
+      <Filter>Source Files\1.intro\7.Camera</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
