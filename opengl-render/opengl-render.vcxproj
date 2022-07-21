@@ -159,6 +159,10 @@
     <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.2.shaders_interpolation\shaders_interpolation.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="1.1color.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2.1basiclighting.cpp" />
     <ClCompile Include="5.1.Matrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -185,6 +189,10 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="1.1fragment.glsl" />
+    <None Include="1.1light_cube_f.glsl" />
+    <None Include="1.1light_cube_v.glsl" />
+    <None Include="1.1vertex.glsl" />
     <None Include="3.3fragment.fs" />
     <None Include="3.3vertex.vs" />
     <None Include="3.4.fragment.fs" />

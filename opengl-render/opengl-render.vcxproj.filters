@@ -70,6 +70,12 @@
     <Filter Include="Source Files\2.light">
       <UniqueIdentifier>{5c2ccc79-b70c-4988-b87d-dc0a1f519550}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2.light\1.color">
+      <UniqueIdentifier>{513182a9-6d56-4fa0-8ec8-86409c2fe154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2.light\2.basiclight">
+      <UniqueIdentifier>{9622f50b-c4d7-4c38-b86a-3ec14ed8f4f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -120,6 +126,12 @@
     <ClCompile Include="7.camera.cpp">
       <Filter>Source Files\1.intro\7.Camera</Filter>
     </ClCompile>
+    <ClCompile Include="1.1color.cpp">
+      <Filter>Source Files\2.light\1.color</Filter>
+    </ClCompile>
+    <ClCompile Include="2.1basiclighting.cpp">
+      <Filter>Source Files\2.light\2.basiclight</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -162,6 +174,18 @@
     </None>
     <None Include="6.1.vertex.glsl">
       <Filter>Source Files\1.intro\6.Coordinates</Filter>
+    </None>
+    <None Include="1.1fragment.glsl">
+      <Filter>Source Files\2.light\2.basiclight</Filter>
+    </None>
+    <None Include="1.1light_cube_f.glsl">
+      <Filter>Source Files\2.light\2.basiclight</Filter>
+    </None>
+    <None Include="1.1light_cube_v.glsl">
+      <Filter>Source Files\2.light\2.basiclight</Filter>
+    </None>
+    <None Include="1.1vertex.glsl">
+      <Filter>Source Files\2.light\2.basiclight</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
