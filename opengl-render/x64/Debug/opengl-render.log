@@ -1,2 +1,7 @@
-﻿  2.1basiclighting.cpp
+﻿  2.3.materials.cpp
+D:\Programming\CG\opengl-starter\opengl-render\2.3.materials.cpp(206,35): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   opengl-render.vcxproj -> D:\Programming\CG\opengl-starter\opengl-render\x64\Debug\opengl-render.exe

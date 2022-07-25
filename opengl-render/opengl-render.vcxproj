@@ -162,7 +162,9 @@
     <ClCompile Include="1.1color.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="2.1basiclighting.cpp" />
+    <ClCompile Include="2.1basiclighting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="5.1.Matrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -172,6 +174,7 @@
     <ClCompile Include="7.camera.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2.3.materials.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="shader_class.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -189,9 +192,13 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="2.3.fragment.glsl" />
     <None Include="1.1fragment.glsl" />
+    <None Include="2.3.light_cube_f.glsl" />
     <None Include="1.1light_cube_f.glsl" />
+    <None Include="2.3.light_cube_v.glsl" />
     <None Include="1.1light_cube_v.glsl" />
+    <None Include="2.3.vertex.glsl" />
     <None Include="1.1vertex.glsl" />
     <None Include="3.3fragment.fs" />
     <None Include="3.3vertex.vs" />
@@ -203,10 +210,6 @@
     <None Include="5.1.vertex.glsl" />
     <None Include="6.1.fragment.glsl" />
     <None Include="6.1.vertex.glsl" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resources\awesomeface.png" />
-    <Image Include="resources\container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

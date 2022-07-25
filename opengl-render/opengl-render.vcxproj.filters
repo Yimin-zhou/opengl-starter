@@ -76,6 +76,9 @@
     <Filter Include="Source Files\2.light\2.basiclight">
       <UniqueIdentifier>{9622f50b-c4d7-4c38-b86a-3ec14ed8f4f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2.light\3.materials">
+      <UniqueIdentifier>{6127ab82-6c61-4e72-a5a3-52f0c3718491}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -132,6 +135,9 @@
     <ClCompile Include="2.1basiclighting.cpp">
       <Filter>Source Files\2.light\2.basiclight</Filter>
     </ClCompile>
+    <ClCompile Include="2.3.materials.cpp">
+      <Filter>Source Files\2.light\3.materials</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -187,13 +193,17 @@
     <None Include="1.1vertex.glsl">
       <Filter>Source Files\2.light\2.basiclight</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resources\container.jpg">
-      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
-    </Image>
-    <Image Include="resources\awesomeface.png">
-      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
-    </Image>
+    <None Include="2.3.fragment.glsl">
+      <Filter>Source Files\2.light\3.materials</Filter>
+    </None>
+    <None Include="2.3.light_cube_f.glsl">
+      <Filter>Source Files\2.light\3.materials</Filter>
+    </None>
+    <None Include="2.3.light_cube_v.glsl">
+      <Filter>Source Files\2.light\3.materials</Filter>
+    </None>
+    <None Include="2.3.vertex.glsl">
+      <Filter>Source Files\2.light\3.materials</Filter>
+    </None>
   </ItemGroup>
 </Project>
