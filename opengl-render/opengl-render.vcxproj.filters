@@ -79,6 +79,12 @@
     <Filter Include="Source Files\2.light\3.materials">
       <UniqueIdentifier>{6127ab82-6c61-4e72-a5a3-52f0c3718491}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2.light\4.lightingmap">
+      <UniqueIdentifier>{0e133e87-1b81-47be-8dd0-805d43ca2b2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2.light\5.lightcasters">
+      <UniqueIdentifier>{67191ef4-75ef-4cfe-a995-e1f1290f1db5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -137,6 +143,12 @@
     </ClCompile>
     <ClCompile Include="2.3.materials.cpp">
       <Filter>Source Files\2.light\3.materials</Filter>
+    </ClCompile>
+    <ClCompile Include="2.4.lightingmap.cpp">
+      <Filter>Source Files\2.light\4.lightingmap</Filter>
+    </ClCompile>
+    <ClCompile Include="2.5.lightingmap.cpp">
+      <Filter>Source Files\2.light\5.lightcasters</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +216,30 @@
     </None>
     <None Include="2.3.vertex.glsl">
       <Filter>Source Files\2.light\3.materials</Filter>
+    </None>
+    <None Include="2.4.fragment.glsl">
+      <Filter>Source Files\2.light\4.lightingmap</Filter>
+    </None>
+    <None Include="2.4.vertex.glsl">
+      <Filter>Source Files\2.light\4.lightingmap</Filter>
+    </None>
+    <None Include="2.4.light_cube_f.glsl">
+      <Filter>Source Files\2.light\4.lightingmap</Filter>
+    </None>
+    <None Include="2.4.light_cube_v.glsl">
+      <Filter>Source Files\2.light\4.lightingmap</Filter>
+    </None>
+    <None Include="2.5.fragment.glsl">
+      <Filter>Source Files\2.light\5.lightcasters</Filter>
+    </None>
+    <None Include="2.5.light_cube_f.glsl">
+      <Filter>Source Files\2.light\5.lightcasters</Filter>
+    </None>
+    <None Include="2.5.light_cube_v.glsl">
+      <Filter>Source Files\2.light\5.lightcasters</Filter>
+    </None>
+    <None Include="2.5.vertex.glsl">
+      <Filter>Source Files\2.light\5.lightcasters</Filter>
     </None>
   </ItemGroup>
 </Project>
