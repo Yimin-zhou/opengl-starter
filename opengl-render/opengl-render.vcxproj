@@ -168,7 +168,12 @@
     <ClCompile Include="2.4.lightingmap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="2.5.lightingmap.cpp" />
+    <ClCompile Include="2.5.lightingmap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2.6.lights.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="5.1.Matrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -214,6 +219,11 @@
     <None Include="2.5.light_cube_f.glsl" />
     <None Include="2.5.light_cube_v.glsl" />
     <None Include="2.5.vertex.glsl" />
+    <None Include="2.6.fs.glsl" />
+    <None Include="2.6.lightf.glsl" />
+    <None Include="2.6.light_cube_f.glsl" />
+    <None Include="2.6.light_cube_v.glsl" />
+    <None Include="2.6.vertex.glsl" />
     <None Include="3.3fragment.fs" />
     <None Include="3.3vertex.vs" />
     <None Include="3.4.fragment.fs" />
@@ -224,6 +234,7 @@
     <None Include="5.1.vertex.glsl" />
     <None Include="6.1.fragment.glsl" />
     <None Include="6.1.vertex.glsl" />
+    <None Include="f.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
