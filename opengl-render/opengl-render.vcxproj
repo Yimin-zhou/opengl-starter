@@ -73,6 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>D:\Programming\CG\opengl-starter\lib;$(LibraryPath)</LibraryPath>
     <IncludePath>D:\Programming\CG\opengl-starter\include;D:\Programming\CG\opengl-starter\glfw-3.3.7\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>D:\Programming\CG\opengl-starter\lib;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,7 +113,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -172,6 +173,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2.6.lights.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="3.1.model.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="5.1.Matrix.cpp">
@@ -199,6 +203,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="model.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
@@ -224,6 +230,11 @@
     <None Include="2.6.light_cube_f.glsl" />
     <None Include="2.6.light_cube_v.glsl" />
     <None Include="2.6.vertex.glsl" />
+    <None Include="3.1.fs.glsl" />
+    <None Include="3.1.lightf.glsl" />
+    <None Include="3.1.light_cube_f.glsl" />
+    <None Include="3.1.light_cube_v.glsl" />
+    <None Include="3.1.vertex.glsl" />
     <None Include="3.3fragment.fs" />
     <None Include="3.3vertex.vs" />
     <None Include="3.4.fragment.fs" />

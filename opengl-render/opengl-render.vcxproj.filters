@@ -88,6 +88,9 @@
     <Filter Include="Source Files\2.light\6.lights">
       <UniqueIdentifier>{c380a739-2bed-49b7-90e9-8e07164da915}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\3.model">
+      <UniqueIdentifier>{6686e24e-da1c-4d34-a6bb-0f435c6f64b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -156,6 +159,9 @@
     <ClCompile Include="2.6.lights.cpp">
       <Filter>Source Files\2.light\6.lights</Filter>
     </ClCompile>
+    <ClCompile Include="3.1.model.cpp">
+      <Filter>Source Files\3.model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -165,6 +171,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -264,6 +276,21 @@
     </None>
     <None Include="2.6.fs.glsl">
       <Filter>Source Files\2.light\6.lights</Filter>
+    </None>
+    <None Include="3.1.fs.glsl">
+      <Filter>Source Files\3.model</Filter>
+    </None>
+    <None Include="3.1.light_cube_f.glsl">
+      <Filter>Source Files\3.model</Filter>
+    </None>
+    <None Include="3.1.light_cube_v.glsl">
+      <Filter>Source Files\3.model</Filter>
+    </None>
+    <None Include="3.1.lightf.glsl">
+      <Filter>Source Files\3.model</Filter>
+    </None>
+    <None Include="3.1.vertex.glsl">
+      <Filter>Source Files\3.model</Filter>
     </None>
   </ItemGroup>
 </Project>
