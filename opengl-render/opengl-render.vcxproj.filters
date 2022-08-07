@@ -91,6 +91,15 @@
     <Filter Include="Source Files\3.model">
       <UniqueIdentifier>{6686e24e-da1c-4d34-a6bb-0f435c6f64b8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\4.advanced">
+      <UniqueIdentifier>{4c06837b-a629-43bc-96d1-1a5a74a839ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\4.advanced\4.1Depth testing">
+      <UniqueIdentifier>{d1dd4473-5fa1-4995-bcd8-af1e2fadce67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\4.advanced\4.2Stencil testing">
+      <UniqueIdentifier>{27066ed0-1da3-498c-8946-1d1cb4c51f2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -161,6 +170,12 @@
     </ClCompile>
     <ClCompile Include="3.1.model.cpp">
       <Filter>Source Files\3.model</Filter>
+    </ClCompile>
+    <ClCompile Include="4.1depthTesting.cpp">
+      <Filter>Source Files\4.advanced\4.1Depth testing</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2stencil.cpp">
+      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -292,5 +307,25 @@
     <None Include="3.1.vertex.glsl">
       <Filter>Source Files\3.model</Filter>
     </None>
+    <None Include="4.1vs.glsl">
+      <Filter>Source Files\4.advanced\4.1Depth testing</Filter>
+    </None>
+    <None Include="4.1fs.glsl">
+      <Filter>Source Files\4.advanced\4.1Depth testing</Filter>
+    </None>
+    <None Include="4.2single.glsl">
+      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
+    </None>
+    <None Include="4.2singlevs.glsl">
+      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="4.2fs.glsl">
+      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
+    </Text>
+    <Text Include="4.2vs.glsl">
+      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
+    </Text>
   </ItemGroup>
 </Project>

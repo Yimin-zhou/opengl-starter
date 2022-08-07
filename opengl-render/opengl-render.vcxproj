@@ -176,8 +176,15 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="3.1.model.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="4.1depthTesting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="4.2stencil.cpp" />
+    <Text Include="4.2vs.glsl">
+      <FileType>Document</FileType>
+    </Text>
     <ClCompile Include="5.1.Matrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -241,6 +248,13 @@
     <None Include="3.4.vertex.vs" />
     <None Include="4.1.fragment.glsl" />
     <None Include="4.1.vertex.glsl" />
+    <None Include="4.1fs.glsl" />
+    <None Include="4.1vs.glsl" />
+    <Text Include="4.2fs.glsl">
+      <FileType>Document</FileType>
+    </Text>
+    <None Include="4.2single.glsl" />
+    <None Include="4.2singlevs.glsl" />
     <None Include="5.1.fragment.glsl" />
     <None Include="5.1.vertex.glsl" />
     <None Include="6.1.fragment.glsl" />
