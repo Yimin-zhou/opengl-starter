@@ -100,6 +100,9 @@
     <Filter Include="Source Files\4.advanced\4.2Stencil testing">
       <UniqueIdentifier>{27066ed0-1da3-498c-8946-1d1cb4c51f2a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\4.advanced\4.3Blending">
+      <UniqueIdentifier>{f68dac79-84e3-4f6b-ac54-5caab9be9f61}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -176,6 +179,9 @@
     </ClCompile>
     <ClCompile Include="4.2stencil.cpp">
       <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
+    </ClCompile>
+    <ClCompile Include="4.3stenci.cpp">
+      <Filter>Source Files\4.advanced\4.3Blending</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -318,6 +324,18 @@
     </None>
     <None Include="4.2singlevs.glsl">
       <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
+    </None>
+    <None Include="4.3fs.glsl">
+      <Filter>Source Files\4.advanced\4.3Blending</Filter>
+    </None>
+    <None Include="4.3single.glsl">
+      <Filter>Source Files\4.advanced\4.3Blending</Filter>
+    </None>
+    <None Include="4.3singlevs.glsl">
+      <Filter>Source Files\4.advanced\4.3Blending</Filter>
+    </None>
+    <None Include="4.3vs.glsl">
+      <Filter>Source Files\4.advanced\4.3Blending</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

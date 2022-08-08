@@ -181,10 +181,13 @@
     <ClCompile Include="4.1depthTesting.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="4.2stencil.cpp" />
+    <ClCompile Include="4.2stencil.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <Text Include="4.2vs.glsl">
       <FileType>Document</FileType>
     </Text>
+    <ClCompile Include="4.3stenci.cpp" />
     <ClCompile Include="5.1.Matrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -255,6 +258,10 @@
     </Text>
     <None Include="4.2single.glsl" />
     <None Include="4.2singlevs.glsl" />
+    <None Include="4.3fs.glsl" />
+    <None Include="4.3single.glsl" />
+    <None Include="4.3singlevs.glsl" />
+    <None Include="4.3vs.glsl" />
     <None Include="5.1.fragment.glsl" />
     <None Include="5.1.vertex.glsl" />
     <None Include="6.1.fragment.glsl" />
