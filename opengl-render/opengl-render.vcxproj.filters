@@ -103,6 +103,9 @@
     <Filter Include="Source Files\4.advanced\4.3Blending">
       <UniqueIdentifier>{f68dac79-84e3-4f6b-ac54-5caab9be9f61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\4.advanced\4.4FaceCulling">
+      <UniqueIdentifier>{43f6fb6d-b07c-4e0a-8d1b-1b7950b26177}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -182,6 +185,9 @@
     </ClCompile>
     <ClCompile Include="4.3stenci.cpp">
       <Filter>Source Files\4.advanced\4.3Blending</Filter>
+    </ClCompile>
+    <ClCompile Include="4.4culling.cpp">
+      <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -336,6 +342,12 @@
     </None>
     <None Include="4.3vs.glsl">
       <Filter>Source Files\4.advanced\4.3Blending</Filter>
+    </None>
+    <None Include="4.4vs.glsl">
+      <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
+    </None>
+    <None Include="4.4fs.glsl">
+      <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
