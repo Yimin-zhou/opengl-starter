@@ -106,6 +106,12 @@
     <Filter Include="Source Files\4.advanced\4.4FaceCulling">
       <UniqueIdentifier>{43f6fb6d-b07c-4e0a-8d1b-1b7950b26177}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\4.advanced\4.5Framebuffers">
+      <UniqueIdentifier>{d3af171b-821e-4686-8daf-e8cf9c8474c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\4.advanced\4.6Cubemap">
+      <UniqueIdentifier>{24ac508f-a454-4c9f-b11f-c33e5a977624}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -188,6 +194,12 @@
     </ClCompile>
     <ClCompile Include="4.4culling.cpp">
       <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
+    </ClCompile>
+    <ClCompile Include="4.5framebuffer.cpp">
+      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="4.6cubemap.cpp">
+      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -348,6 +360,30 @@
     </None>
     <None Include="4.4fs.glsl">
       <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
+    </None>
+    <None Include="4.5vs.glsl">
+      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
+    </None>
+    <None Include="4.5fs.glsl">
+      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
+    </None>
+    <None Include="4.5screenvs.glsl">
+      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
+    </None>
+    <None Include="4.5screenfs.glsl">
+      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
+    </None>
+    <None Include="4.6modelvs.glsl">
+      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
+    </None>
+    <None Include="4.6modelfs.glsl">
+      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
+    </None>
+    <None Include="4.6skyboxvs.glsl">
+      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
+    </None>
+    <None Include="4.6skyboxfx.glsl">
+      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
