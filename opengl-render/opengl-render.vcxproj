@@ -193,10 +193,13 @@
     <ClCompile Include="4.4culling.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="4.6cubemap.cpp" />
+    <ClCompile Include="4.6cubemap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="4.5framebuffer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="4.8AdvancedGLSL.cpp" />
     <ClCompile Include="5.1.Matrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -281,6 +284,11 @@
     <None Include="4.6modelvs.glsl" />
     <None Include="4.6skyboxfx.glsl" />
     <None Include="4.6skyboxvs.glsl" />
+    <None Include="4.8fsBlue.glsl" />
+    <None Include="4.8fsGreen.glsl" />
+    <None Include="4.8fsRed.glsl" />
+    <None Include="4.8fsYellow.glsl" />
+    <None Include="4.8vs.glsl" />
     <None Include="5.1.fragment.glsl" />
     <None Include="5.1.vertex.glsl" />
     <None Include="6.1.fragment.glsl" />
