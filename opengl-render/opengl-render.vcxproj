@@ -199,7 +199,10 @@
     <ClCompile Include="4.5framebuffer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="4.8AdvancedGLSL.cpp" />
+    <ClCompile Include="4.8AdvancedGLSL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="4.8Geometryshader.cpp" />
     <ClCompile Include="5.1.Matrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -288,6 +291,9 @@
     <None Include="4.8fsGreen.glsl" />
     <None Include="4.8fsRed.glsl" />
     <None Include="4.8fsYellow.glsl" />
+    <None Include="4.8geo.glsl" />
+    <None Include="4.8geofs.glsl" />
+    <None Include="4.8geovs.glsl" />
     <None Include="4.8vs.glsl" />
     <None Include="5.1.fragment.glsl" />
     <None Include="5.1.vertex.glsl" />

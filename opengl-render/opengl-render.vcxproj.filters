@@ -115,6 +115,9 @@
     <Filter Include="Source Files\4.advanced\4.8AdvancedGLSL">
       <UniqueIdentifier>{93ae78ec-f93b-4b15-bf1c-de9e68b1f7f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\4.advanced\4.9Geometryshader">
+      <UniqueIdentifier>{f0cc105e-46e5-48ae-b445-e95f1435e3c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -206,6 +209,9 @@
     </ClCompile>
     <ClCompile Include="4.8AdvancedGLSL.cpp">
       <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="4.8Geometryshader.cpp">
+      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -405,6 +411,15 @@
     </None>
     <None Include="4.8fsYellow.glsl">
       <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
+    </None>
+    <None Include="4.8geofs.glsl">
+      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
+    </None>
+    <None Include="4.8geovs.glsl">
+      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
+    </None>
+    <None Include="4.8geo.glsl">
+      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
