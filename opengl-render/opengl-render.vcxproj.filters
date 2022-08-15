@@ -120,314 +120,44 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="glad.c">
+    <ClCompile Include="src\1.Introduction\1.3Shader\shader_class.cpp">
+      <Filter>Source Files\1.intro\3.Shader\3.3.Shader_class</Filter>
+    </ClCompile>
+    <ClCompile Include="src\1.Introduction\1.3Shader\shader_excercise.cpp">
+      <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\1.Introduction\1.4Texture\texture.cpp">
+      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shader_class.cpp">
-      <Filter>Source Files\1.intro\3.Shader\3.3.Shader_class</Filter>
-    </ClCompile>
-    <ClCompile Include="shader_excercise.cpp">
-      <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\1.1.hello_window\hello_window.cpp">
-      <Filter>Source Files\1.intro\1.Hello\1.1.hello_window</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\1.2.hello_window_clear\hello_window_clear.cpp">
-      <Filter>Source Files\1.intro\1.Hello\1.2.hello_window_clear</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.1.hello_triangle\hello_triangle.cpp">
-      <Filter>Source Files\1.intro\2.Triangle\2.1.hello_triangle</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.2.hello_triangle_indexed\hello_triangle_indexed.cpp">
-      <Filter>Source Files\1.intro\2.Triangle\2.2.hello_triangle_indexed</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.3.hello_triangle_exercise1\hello_triangle_exercise1.cpp">
-      <Filter>Source Files\1.intro\2.Triangle\2.3.exercise</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.4.hello_triangle_exercise2\hello_triangle_exercise2.cpp">
-      <Filter>Source Files\1.intro\2.Triangle\2.3.exercise</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.5.hello_triangle_exercise3\hello_triangle_exercise3.cpp">
-      <Filter>Source Files\1.intro\2.Triangle\2.3.exercise</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.1.shaders_uniform\shaders_uniform.cpp">
-      <Filter>Source Files\1.intro\3.Shader\3.1.shaders_uniform</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.2.shaders_interpolation\shaders_interpolation.cpp">
-      <Filter>Source Files\1.intro\3.Shader\3.2.shaders_interpolation</Filter>
-    </ClCompile>
-    <ClCompile Include="texture.cpp">
-      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
-    </ClCompile>
-    <ClCompile Include="5.1.Matrix.cpp">
-      <Filter>Source Files\1.intro\5.Matrix</Filter>
-    </ClCompile>
-    <ClCompile Include="6.Coordinate.cpp">
-      <Filter>Source Files\1.intro\6.Coordinates</Filter>
-    </ClCompile>
-    <ClCompile Include="7.camera.cpp">
-      <Filter>Source Files\1.intro\7.Camera</Filter>
-    </ClCompile>
-    <ClCompile Include="1.1color.cpp">
-      <Filter>Source Files\2.light\1.color</Filter>
-    </ClCompile>
-    <ClCompile Include="2.1basiclighting.cpp">
-      <Filter>Source Files\2.light\2.basiclight</Filter>
-    </ClCompile>
-    <ClCompile Include="2.3.materials.cpp">
-      <Filter>Source Files\2.light\3.materials</Filter>
-    </ClCompile>
-    <ClCompile Include="2.4.lightingmap.cpp">
-      <Filter>Source Files\2.light\4.lightingmap</Filter>
-    </ClCompile>
-    <ClCompile Include="2.5.lightingmap.cpp">
-      <Filter>Source Files\2.light\5.lightcasters</Filter>
-    </ClCompile>
-    <ClCompile Include="2.6.lights.cpp">
-      <Filter>Source Files\2.light\6.lights</Filter>
-    </ClCompile>
-    <ClCompile Include="3.1.model.cpp">
-      <Filter>Source Files\3.model</Filter>
-    </ClCompile>
-    <ClCompile Include="4.1depthTesting.cpp">
-      <Filter>Source Files\4.advanced\4.1Depth testing</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2stencil.cpp">
-      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
-    </ClCompile>
-    <ClCompile Include="4.3stenci.cpp">
-      <Filter>Source Files\4.advanced\4.3Blending</Filter>
-    </ClCompile>
-    <ClCompile Include="4.4culling.cpp">
-      <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
-    </ClCompile>
-    <ClCompile Include="4.5framebuffer.cpp">
-      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
-    </ClCompile>
-    <ClCompile Include="4.6cubemap.cpp">
-      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
-    </ClCompile>
-    <ClCompile Include="4.8AdvancedGLSL.cpp">
-      <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
-    </ClCompile>
-    <ClCompile Include="4.8Geometryshader.cpp">
-      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
+    <ClCompile Include="src\4.Advanced\4.11AntiAnliasing\4.11antianliasing.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shader.h">
+    <ClInclude Include="include\stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stb_image.h">
+    <ClInclude Include="include\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h">
+    <ClInclude Include="include\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mesh.h">
+    <ClInclude Include="include\model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="model.h">
+    <ClInclude Include="include\shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="3.3fragment.fs">
-      <Filter>Source Files\1.intro\3.Shader\3.3.Shader_class</Filter>
-    </None>
-    <None Include="3.3vertex.vs">
-      <Filter>Source Files\1.intro\3.Shader\3.3.Shader_class</Filter>
-    </None>
-    <None Include="3.4.fragment.fs">
-      <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
-    </None>
-    <None Include="3.4.vertex.vs">
-      <Filter>Source Files\1.intro\3.Shader\3.4.Shader_exercise</Filter>
-    </None>
-    <None Include="4.1.vertex.glsl">
-      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
-    </None>
-    <None Include="4.1.fragment.glsl">
-      <Filter>Source Files\1.intro\4.Texture\4.1.textrue</Filter>
-    </None>
-    <None Include="5.1.vertex.glsl">
-      <Filter>Source Files\1.intro\5.Matrix</Filter>
-    </None>
-    <None Include="5.1.fragment.glsl">
-      <Filter>Source Files\1.intro\5.Matrix</Filter>
-    </None>
-    <None Include="6.1.fragment.glsl">
-      <Filter>Source Files\1.intro\6.Coordinates</Filter>
-    </None>
-    <None Include="6.1.vertex.glsl">
-      <Filter>Source Files\1.intro\6.Coordinates</Filter>
-    </None>
-    <None Include="1.1fragment.glsl">
-      <Filter>Source Files\2.light\2.basiclight</Filter>
-    </None>
-    <None Include="1.1light_cube_f.glsl">
-      <Filter>Source Files\2.light\2.basiclight</Filter>
-    </None>
-    <None Include="1.1light_cube_v.glsl">
-      <Filter>Source Files\2.light\2.basiclight</Filter>
-    </None>
-    <None Include="1.1vertex.glsl">
-      <Filter>Source Files\2.light\2.basiclight</Filter>
-    </None>
-    <None Include="2.3.fragment.glsl">
-      <Filter>Source Files\2.light\3.materials</Filter>
-    </None>
-    <None Include="2.3.light_cube_f.glsl">
-      <Filter>Source Files\2.light\3.materials</Filter>
-    </None>
-    <None Include="2.3.light_cube_v.glsl">
-      <Filter>Source Files\2.light\3.materials</Filter>
-    </None>
-    <None Include="2.3.vertex.glsl">
-      <Filter>Source Files\2.light\3.materials</Filter>
-    </None>
-    <None Include="2.4.fragment.glsl">
-      <Filter>Source Files\2.light\4.lightingmap</Filter>
-    </None>
-    <None Include="2.4.vertex.glsl">
-      <Filter>Source Files\2.light\4.lightingmap</Filter>
-    </None>
-    <None Include="2.4.light_cube_f.glsl">
-      <Filter>Source Files\2.light\4.lightingmap</Filter>
-    </None>
-    <None Include="2.4.light_cube_v.glsl">
-      <Filter>Source Files\2.light\4.lightingmap</Filter>
-    </None>
-    <None Include="2.5.fragment.glsl">
-      <Filter>Source Files\2.light\5.lightcasters</Filter>
-    </None>
-    <None Include="2.5.light_cube_f.glsl">
-      <Filter>Source Files\2.light\5.lightcasters</Filter>
-    </None>
-    <None Include="2.5.light_cube_v.glsl">
-      <Filter>Source Files\2.light\5.lightcasters</Filter>
-    </None>
-    <None Include="2.5.vertex.glsl">
-      <Filter>Source Files\2.light\5.lightcasters</Filter>
-    </None>
-    <None Include="2.6.light_cube_v.glsl">
-      <Filter>Source Files\2.light\6.lights</Filter>
-    </None>
-    <None Include="2.6.vertex.glsl">
-      <Filter>Source Files\2.light\6.lights</Filter>
-    </None>
-    <None Include="2.6.lightf.glsl">
-      <Filter>Source Files\2.light\6.lights</Filter>
-    </None>
-    <None Include="2.6.light_cube_f.glsl">
-      <Filter>Source Files\2.light\6.lights</Filter>
-    </None>
-    <None Include="f.glsl">
-      <Filter>Source Files\2.light\6.lights</Filter>
-    </None>
-    <None Include="2.6.fs.glsl">
-      <Filter>Source Files\2.light\6.lights</Filter>
-    </None>
-    <None Include="3.1.fs.glsl">
-      <Filter>Source Files\3.model</Filter>
-    </None>
-    <None Include="3.1.light_cube_f.glsl">
-      <Filter>Source Files\3.model</Filter>
-    </None>
-    <None Include="3.1.light_cube_v.glsl">
-      <Filter>Source Files\3.model</Filter>
-    </None>
-    <None Include="3.1.lightf.glsl">
-      <Filter>Source Files\3.model</Filter>
-    </None>
-    <None Include="3.1.vertex.glsl">
-      <Filter>Source Files\3.model</Filter>
-    </None>
-    <None Include="4.1vs.glsl">
-      <Filter>Source Files\4.advanced\4.1Depth testing</Filter>
-    </None>
-    <None Include="4.1fs.glsl">
-      <Filter>Source Files\4.advanced\4.1Depth testing</Filter>
-    </None>
-    <None Include="4.2single.glsl">
-      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
-    </None>
-    <None Include="4.2singlevs.glsl">
-      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
-    </None>
-    <None Include="4.3fs.glsl">
-      <Filter>Source Files\4.advanced\4.3Blending</Filter>
-    </None>
-    <None Include="4.3single.glsl">
-      <Filter>Source Files\4.advanced\4.3Blending</Filter>
-    </None>
-    <None Include="4.3singlevs.glsl">
-      <Filter>Source Files\4.advanced\4.3Blending</Filter>
-    </None>
-    <None Include="4.3vs.glsl">
-      <Filter>Source Files\4.advanced\4.3Blending</Filter>
-    </None>
-    <None Include="4.4vs.glsl">
-      <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
-    </None>
-    <None Include="4.4fs.glsl">
-      <Filter>Source Files\4.advanced\4.4FaceCulling</Filter>
-    </None>
-    <None Include="4.5vs.glsl">
-      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
-    </None>
-    <None Include="4.5fs.glsl">
-      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
-    </None>
-    <None Include="4.5screenvs.glsl">
-      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
-    </None>
-    <None Include="4.5screenfs.glsl">
-      <Filter>Source Files\4.advanced\4.5Framebuffers</Filter>
-    </None>
-    <None Include="4.6modelvs.glsl">
-      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
-    </None>
-    <None Include="4.6modelfs.glsl">
-      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
-    </None>
-    <None Include="4.6skyboxvs.glsl">
-      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
-    </None>
-    <None Include="4.6skyboxfx.glsl">
-      <Filter>Source Files\4.advanced\4.6Cubemap</Filter>
-    </None>
-    <None Include="4.8vs.glsl">
-      <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
-    </None>
-    <None Include="4.8fsBlue.glsl">
-      <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
-    </None>
-    <None Include="4.8fsRed.glsl">
-      <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
-    </None>
-    <None Include="4.8fsGreen.glsl">
-      <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
-    </None>
-    <None Include="4.8fsYellow.glsl">
-      <Filter>Source Files\4.advanced\4.8AdvancedGLSL</Filter>
-    </None>
-    <None Include="4.8geofs.glsl">
-      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
-    </None>
-    <None Include="4.8geovs.glsl">
-      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
-    </None>
-    <None Include="4.8geo.glsl">
-      <Filter>Source Files\4.advanced\4.9Geometryshader</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="4.2fs.glsl">
-      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
-    </Text>
-    <Text Include="4.2vs.glsl">
-      <Filter>Source Files\4.advanced\4.2Stencil testing</Filter>
-    </Text>
+    <None Include="src\4.Advanced\4.10Instancing\4.10metroVS.glsl" />
+    <None Include="src\4.Advanced\4.10Instancing\4.10metroFS.glsl" />
+    <None Include="src\4.Advanced\4.10Instancing\4.10planetVS.glsl" />
+    <None Include="src\4.Advanced\4.11AntiAnliasing\4.11antianliasingFS.glsl" />
+    <None Include="src\4.Advanced\4.11AntiAnliasing\4.11antianliasingVS.glsl" />
   </ItemGroup>
 </Project>

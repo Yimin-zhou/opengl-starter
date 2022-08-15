@@ -71,9 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Programming\CG\opengl-starter\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Programming\CG\opengl-starter\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\Programming\CG\opengl-starter\include;D:\Programming\CG\opengl-starter\glfw-3.3.7\include;$(IncludePath)</IncludePath>
-    <ExecutablePath>D:\Programming\CG\opengl-starter\lib;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\Programming\CG\opengl-starter\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Programming\CG\opengl-starter\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -113,7 +116,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,176 +133,35 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\1.1.hello_window\hello_window.cpp">
+    <ClCompile Include="src\1.Introduction\1.3Shader\shader_class.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\1.2.hello_window_clear\hello_window_clear.cpp">
+    <ClCompile Include="src\1.Introduction\1.3Shader\shader_excercise.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.1.hello_triangle\hello_triangle.cpp">
+    <ClCompile Include="src\1.Introduction\1.4Texture\texture.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.2.hello_triangle_indexed\hello_triangle_indexed.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.3.hello_triangle_exercise1\hello_triangle_exercise1.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.4.hello_triangle_exercise2\hello_triangle_exercise2.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\2.5.hello_triangle_exercise3\hello_triangle_exercise3.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.1.shaders_uniform\shaders_uniform.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\opengl-example\LearnOpenGL\src\1.getting_started\3.2.shaders_interpolation\shaders_interpolation.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="1.1color.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="2.1basiclighting.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="2.4.lightingmap.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="2.5.lightingmap.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="2.6.lights.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="3.1.model.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="4.1depthTesting.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="4.2stencil.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <Text Include="4.2vs.glsl">
-      <FileType>Document</FileType>
-    </Text>
-    <ClCompile Include="4.3stenci.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="4.4culling.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="4.6cubemap.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="4.5framebuffer.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="4.8AdvancedGLSL.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="4.8Geometryshader.cpp" />
-    <ClCompile Include="5.1.Matrix.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="6.Coordinate.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="7.camera.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="2.3.materials.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="glad.c" />
-    <ClCompile Include="shader_class.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="shader_excercise.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="texture.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="src\4.Advanced\4.11AntiAnliasing\4.11antianliasing.cpp" />
+    <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="mesh.h" />
-    <ClInclude Include="model.h" />
-    <ClInclude Include="shader.h" />
-    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="include\camera.h" />
+    <ClInclude Include="include\mesh.h" />
+    <ClInclude Include="include\model.h" />
+    <ClInclude Include="include\shader.h" />
+    <ClInclude Include="include\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="2.3.fragment.glsl" />
-    <None Include="1.1fragment.glsl" />
-    <None Include="2.3.light_cube_f.glsl" />
-    <None Include="1.1light_cube_f.glsl" />
-    <None Include="2.3.light_cube_v.glsl" />
-    <None Include="1.1light_cube_v.glsl" />
-    <None Include="2.3.vertex.glsl" />
-    <None Include="1.1vertex.glsl" />
-    <None Include="2.4.fragment.glsl" />
-    <None Include="2.4.light_cube_f.glsl" />
-    <None Include="2.4.light_cube_v.glsl" />
-    <None Include="2.4.vertex.glsl" />
-    <None Include="2.5.fragment.glsl" />
-    <None Include="2.5.light_cube_f.glsl" />
-    <None Include="2.5.light_cube_v.glsl" />
-    <None Include="2.5.vertex.glsl" />
-    <None Include="2.6.fs.glsl" />
-    <None Include="2.6.lightf.glsl" />
-    <None Include="2.6.light_cube_f.glsl" />
-    <None Include="2.6.light_cube_v.glsl" />
-    <None Include="2.6.vertex.glsl" />
-    <None Include="3.1.fs.glsl" />
-    <None Include="3.1.lightf.glsl" />
-    <None Include="3.1.light_cube_f.glsl" />
-    <None Include="3.1.light_cube_v.glsl" />
-    <None Include="3.1.vertex.glsl" />
-    <None Include="3.3fragment.fs" />
-    <None Include="3.3vertex.vs" />
-    <None Include="3.4.fragment.fs" />
-    <None Include="3.4.vertex.vs" />
-    <None Include="4.1.fragment.glsl" />
-    <None Include="4.1.vertex.glsl" />
-    <None Include="4.1fs.glsl" />
-    <None Include="4.1vs.glsl" />
-    <Text Include="4.2fs.glsl">
-      <FileType>Document</FileType>
-    </Text>
-    <None Include="4.2single.glsl" />
-    <None Include="4.2singlevs.glsl" />
-    <None Include="4.3fs.glsl" />
-    <None Include="4.3single.glsl" />
-    <None Include="4.3singlevs.glsl" />
-    <None Include="4.3vs.glsl" />
-    <None Include="4.4fs.glsl" />
-    <None Include="4.4vs.glsl" />
-    <None Include="4.5fs.glsl" />
-    <None Include="4.5screenfs.glsl" />
-    <None Include="4.5screenvs.glsl" />
-    <None Include="4.5vs.glsl" />
-    <None Include="4.6modelfs.glsl" />
-    <None Include="4.6modelvs.glsl" />
-    <None Include="4.6skyboxfx.glsl" />
-    <None Include="4.6skyboxvs.glsl" />
-    <None Include="4.8fsBlue.glsl" />
-    <None Include="4.8fsGreen.glsl" />
-    <None Include="4.8fsRed.glsl" />
-    <None Include="4.8fsYellow.glsl" />
-    <None Include="4.8geo.glsl" />
-    <None Include="4.8geofs.glsl" />
-    <None Include="4.8geovs.glsl" />
-    <None Include="4.8vs.glsl" />
-    <None Include="5.1.fragment.glsl" />
-    <None Include="5.1.vertex.glsl" />
-    <None Include="6.1.fragment.glsl" />
-    <None Include="6.1.vertex.glsl" />
-    <None Include="f.glsl" />
+    <None Include="src\4.Advanced\4.10Instancing\4.10metroFS.glsl" />
+    <None Include="src\4.Advanced\4.10Instancing\4.10metroVS.glsl" />
+    <None Include="src\4.Advanced\4.10Instancing\4.10planetVS.glsl" />
+    <None Include="src\4.Advanced\4.11AntiAnliasing\4.11antianliasingFS.glsl" />
+    <None Include="src\4.Advanced\4.11AntiAnliasing\4.11antianliasingVS.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

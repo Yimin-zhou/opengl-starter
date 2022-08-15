@@ -1,0 +1,8 @@
+﻿  shader_class.cpp
+D:\Programming\CG\opengl-starter\opengl-render\src\1.Introduction\1.3Shader\shader_class.cpp(1,10): fatal error C1083: Cannot open include file: 'glad/glad.h': No such file or directory
+  shader_excercise.cpp
+D:\Programming\CG\opengl-starter\opengl-render\src\1.Introduction\1.3Shader\shader_excercise.cpp(1,10): fatal error C1083: Cannot open include file: 'glad/glad.h': No such file or directory
+  texture.cpp
+D:\Programming\CG\opengl-starter\opengl-render\src\1.Introduction\1.4Texture\texture.cpp(2,10): fatal error C1083: Cannot open include file: 'stb_image.h': No such file or directory
+  4.10InstancingExample.cpp
+D:\Programming\CG\opengl-starter\opengl-render\src\4.Advanced\4.10Instancing\4.10InstancingExample.cpp(1,10): fatal error C1083: Cannot open include file: 'glad/glad.h': No such file or directory

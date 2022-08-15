@@ -1,3 +1,3 @@
-﻿  4.8Geometryshader.cpp
-D:\Programming\CG\opengl-starter\opengl-render\mesh.h(110,65): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+﻿  4.11antianliasing.cpp
+D:\Programming\CG\opengl-starter\opengl-render\include\mesh.h(109,65): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
   opengl-render.vcxproj -> D:\Programming\CG\opengl-starter\opengl-render\x64\Debug\opengl-render.exe
